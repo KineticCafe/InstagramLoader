@@ -1,0 +1,17 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+def add_common_dependencies
+    pod "KCInstagramLoader", :path => "../../"
+end
+
+target 'KCInstagramViewer', :exclusive => true do
+  add_common_dependencies
+end
+
+target 'KCInstagramViewerTests', :exclusive => true do
+  add_common_dependencies
+end
+
+target 'KCInstagramViewerUITests', :exclusive => true do
+add_common_dependencies
+end
